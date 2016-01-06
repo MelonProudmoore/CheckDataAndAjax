@@ -1,8 +1,8 @@
 <?php
 header('Content-Type:text/html;charset=utf-8');
-$p_username=isset($_POST['p_username'])?$_POST['p_username']:null;
-$p_password=isset($_POST['p_password'])?$_POST['p_password']:null;
-$p_rememberMe=isset($_POST['p_rememberMe'])?$_POST['p_rememberMe']:null;
+$p_username=isset($_POST['p_username'])?trim($_POST['p_username']):null;
+$p_password=isset($_POST['p_password'])?trim($_POST['p_password']):null;
+$p_rememberMe=isset($_POST['p_rememberMe'])?trim($_POST['p_rememberMe']):null;
 
 if(!empty($p_username) && !empty($p_password) && !empty($p_rememberMe)){
     $p_rememberMe=$p_rememberMe=='true'?$p_rememberMe='记住我已勾选！':$p_rememberMe='记住我未勾选！';
