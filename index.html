@@ -1,0 +1,64 @@
+@@ -0,0 +1,62 @@
+<!doctype html>
+<html>
+<head lang="zh_CN">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-8" />
+    <title>检查输入数据并Ajax异步提交登录 ——By:www.gioov.com - 天堂芝士</title>
+
+    <style type="text/css">
+        body{  font-size: 18px;  }
+
+        ul.loginForm{  list-style: none;  }
+
+        ul.loginForm li{  padding-bottom: 18px;  }
+
+        input{  font-size: 16px;  }
+
+        a,a:visited{
+            text-decoration: underline;
+            color:#333;
+            padding:5px 10px 5px 10px;
+        }
+
+        a:hover,a:focus{
+            text-decoration: none;
+            color:#fff;
+            background: #333;
+        }
+        p.loginMsg{
+            font-size:14px;
+            color:red;
+            font-weight: bold;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <ul  class="loginForm">
+        <li><h2 style="text-decoration: underline">检查输入数据并Ajax异步提交登录</h2></li>
+
+        <li>用户名：<input type="text" id="input-text-username" placeholder="请输入用户名" oninput="javascript:checkInput(this);" /><p class="loginMsg" id="input-text-username-msg"></p></li>
+
+        <li>密码：<input type="password" id="input-text-password" placeholder="请输入密码" oninput="javascript:checkInput(this);" /><p class="loginMsg" id="input-text-password-msg"></p></li>
+
+        <li><input type="checkbox" id="input-checkbox-rememberMe"/>请记住我</li>
+
+        <li><input type="button" id="input-button-submitLogin" value="提交登录"/><p class="loginMsg" id="loginSuccessMsg"></p></li>
+
+        <li><p>
+            <a href="http://www.gioov.com/" target="_blank" title="By:www.gioov.com - 天堂芝士">——by:WWW.GIOOV.COM - 天堂芝士</a>
+        </p></li>
+    </ul>
+
+<!--# 首先引用jquery-->
+<script src="jquery-1.11.3.min.js"></script>
+
+<!--# 再引用CheckInputAndAjax.js-->
+<script src="checkDataAndAjax.js"></script>
+</body>
+</html>
+\ No newline at end of file
