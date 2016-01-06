@@ -1,7 +1,36 @@
 
 
 $(document).ready(function(){
-
+    
+    //检测输入框数据的改变情况
+function checkInput(obj){
+    var objVal=obj.value.trim();
+    var objId=obj.id;
+    switch (objId){
+        case 'input-text-username':
+            var msgId="#"+objId + "-msg";
+            var msg = $(msgId);
+            if(objVal=="") {
+                msg.html("请输入用户名！");
+            }else{
+                msg.html("");
+                $("#loginSuccessMsg").html("");
+            }
+            break;
+        case 'input-text-password':
+            var msgId="#"+objId + "-msg";
+            var msg = $(msgId);
+            if(objVal=="") {
+                msg.html("请输入密码！");
+            }else{
+                msg.html("");
+                $("#loginSuccessMsg").html("");
+            }
+            break;
+    }
+    
+    
+    //提交登录按钮被单击事件 检测输入框是否为空，数据是否错误，合法数据后提交url
     $("#input-button-submitLogin").click(function(){
 
         var username = $("#input-text-username").val().trim();
@@ -41,34 +70,5 @@ $(document).ready(function(){
     })
 
 })
-
-//检测输入框数据的改变情况
-function checkInput(obj){
-    var objVal=obj.value.trim();
-    var objId=obj.id;
-    switch (objId){
-        case 'input-text-username':
-            var msgId="#"+objId + "-msg";
-            var msg = $(msgId);
-            if(objVal=="") {
-                msg.html("请输入用户名！");
-            }else{
-                msg.html("");
-                $("#loginSuccessMsg").html("");
-            }
-            break;
-        case 'input-text-password':
-            var msgId="#"+objId + "-msg";
-            var msg = $(msgId);
-            if(objVal=="") {
-                msg.html("请输入密码！");
-            }else{
-                msg.html("");
-                $("#loginSuccessMsg").html("");
-            }
-            break;
-
-    }
-
 
 }
