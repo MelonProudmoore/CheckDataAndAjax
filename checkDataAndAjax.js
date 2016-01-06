@@ -63,6 +63,7 @@ function checkInput(obj){
             if(objVal=="") {
                 msg.html("请输入密码！");
             }else{
+                msg.html("");
                 $("#loginSuccessMsg").html("");
             }
             break;
