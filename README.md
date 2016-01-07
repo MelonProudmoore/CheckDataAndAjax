@@ -1,8 +1,8 @@
 # CheckDataAndAjax
-一个简易的供新手学习的项目！使用jQuery库来检测输入数据，并用Ajax方法来异步提交数据。
+一个简易的供新手学习的用户登录验证例子！使用jQuery库来检测输入数据，并用Ajax方法来异步提交数据。
 
 ### index.html
-主页面
+登录主页面
 
 ### checkDataAndAjax.js
 检测用户输入数据并用ajax方法提交处理
