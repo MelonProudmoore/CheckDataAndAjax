@@ -13,3 +13,5 @@ ajax方法请求的php页面，此页面返回两个结果分别为布尔型及�
 ### jquery-1.11.3.min.js
 供此项目引用的jQuery库。
 也可通过cdn引用：//cdn.bootcss.com/jquery/1.11.3/jquery.min.js
+
+# 博客地址：http://www.gioov.com
